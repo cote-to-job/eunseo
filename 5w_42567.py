@@ -24,6 +24,6 @@ def solution(jobs):
         else:
             now += 1  # 현재 시각에 처리 가능한 작업이 없으면 1ms씩 증가
 
-   
+
     answer += total // size
     return answer
