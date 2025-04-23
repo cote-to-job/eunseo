@@ -21,7 +21,7 @@ def solution(number, k):
 def solution(number, k):
     answer = []
     
-    if len(set(number))==1: # 1개 숫자만 존재 시 처리리
+    if len(set(number))==1: # 1개 숫자만 존재 시 처리
         return number[k:]
     for num in number:
         while k > 0 and answer and answer[-1] < num:
@@ -29,7 +29,7 @@ def solution(number, k):
             k -= 1
         answer.append(num)
     
-    return ''.join(answer[:len(answer)-k])#number의 숫자가 만약 큰 순서대로 되어있다면 처음~끝-k로 처리리
+    return ''.join(answer[:len(answer)-k])#number의 숫자가 만약 큰 순서대로 되어있다면 처음~끝-k로 처리
 
 
 solution("333222111 ",3)
