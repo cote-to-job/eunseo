@@ -36,4 +36,5 @@ input = sys.stdin.readline
 n= int(input())
 for _ in range(n):
     x,y = map(int, input().split())
+    #y-x가 완전제곱수일 때(예: 1, 4, 9) 결과값이 변하는 문제 방지
     print(int(2*(y-x)**0.5- 1e-9))
