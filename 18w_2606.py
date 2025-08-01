@@ -13,7 +13,12 @@ for _ in range(pair):
 
 visit = [0]*(n+1)
 cnt =0
-
+visit[1]=1
+for k,v in warm.items():
+    if visit[k]:
+        for vv in v:
+            visit[vv]=1
+print(sum(visit))
 def dfs(warm,visit,v):
     global cnt
     visit[v]=1
